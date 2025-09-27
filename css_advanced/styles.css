@@ -25,3 +25,101 @@ header nav ul li a {
   font-weight: 500;
   font-size: 16px;
 }
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 600px; /* adjust based on Figma */
+  background-image: url('../images/hero-bg.jpg'); /* path from CSS file to image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero .hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 48px; /* adjust per Figma */
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px; /* adjust per Figma */
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.hero .cta-button {
+  padding: 15px 35px;
+  background-color: #ff6600; /* Figma button color */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px; /* adjust per Figma */
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Videos List Section */
+.videos {
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* replace with Figma color */
+  text-align: center;
+}
+
+.videos h2 {
+  font-size: 36px; /* Figma font size */
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222222; /* Figma color */
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-item {
+  background-color: #ffffff; /* card background */
+  border-radius: 12px; /* Figma rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.video-item:hover {
+  transform: translateY(-5px);
+}
+
+.video-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 10px 5px;
+  color: #222222;
+}
+
+.video-item p {
+  font-size: 14px;
+  color: #555555;
+  margin: 0 10px 15px;
+  line-height: 1.4;
+}
