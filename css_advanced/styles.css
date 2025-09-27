@@ -1,0 +1,106 @@
+/* =========================
+   Base Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+/* =========================
+   Header + Navigation
+========================= */
+header {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+header .logo {
+  font-size: 2rem;
+  margin-right: auto; /* pushes nav items to the right */
+}
+
+/* =========================
+   Main Layout
+========================= */
+main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Article */
+article {
+  flex: 3;
+  background: #fffbe6;
+  padding: 20px;
+  border: 1px solid #ffd700;
+  border-radius: 8px;
+}
+
+/* Aside */
+aside {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+  border-left: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* =========================
+   Responsive (Mobile)
+========================= */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header .logo {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  article, aside {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
