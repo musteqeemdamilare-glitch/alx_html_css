@@ -198,3 +198,49 @@ header nav ul li a {
 .membership-item .btn:hover {
   background-color: #e55b00; /* darker on hover */
 }
+/* ===== FAQ Section ===== */
+.faq {
+  padding: 60px 20px;
+  background-color: #ffffff; /* replace with Figma background color */
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 36px; /* Figma font size */
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222222;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background-color: #f4f6f8; /* FAQ card background */
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+}
+
+.faq-item .question {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.faq-item .answer {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+}
