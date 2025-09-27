@@ -1,0 +1,38 @@
+/* Body is a flex container with vertical stacking */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full screen height */
+  margin: 0;
+}
+
+/* Main is a flex container with horizontal stacking */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Take up remaining space between header and footer */
+}
+
+/* Article takes 2/3 of width */
+article {
+  flex: 2;
+  overflow-y: auto; /* Scrollable */
+  padding: 1rem;
+  background-color: #f0f8ff;
+}
+
+/* Aside takes 1/3 of width */
+aside {
+  flex: 1;
+  overflow-y: auto; /* Scrollable */
+  padding: 1rem;
+  background-color: #e6e6e6;
+}
+
+/* Header and footer styling */
+header, footer {
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
